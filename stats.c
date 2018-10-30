@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2017 by Alex Fosdick - University of Colorado
+ * Copyright (C) 2018 by Hussain Aftab
  *
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief assesment week 1
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Hussain Afatb
+ * @date 30-10-2018
  *
  */
 
@@ -41,3 +41,62 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+
+void print_statistics(char array[])
+{
+
+// write code to print array statistics
+
+}
+
+void print_array (char array[])
+{
+
+// write code to print array
+
+}
+
+
+char find_median (char array[])
+{
+
+// write code to calculate medain of array
+return ('\0');
+
+}
+
+char find_mean (char array[])
+{
+
+// write code to calculate mean of array
+return ('\0');
+
+}
+
+char find_maximum (char array[])
+{
+
+// write code to calculate maximum of array
+return ('\0');
+
+}
+
+
+char find_minimum (char array[])
+{
+
+// write code to calculate minimum of array
+return ('\0');
+
+}
+
+
+void sort_array (char array[])
+{
+
+// write code to sort the array
+
+
+}
+
+
