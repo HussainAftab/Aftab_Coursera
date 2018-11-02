@@ -38,64 +38,129 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
+
+  print_statistics(test, SIZE);
+	
 }
 
 /* Add other Implementation File Code Here */
 
-void print_statistics(char array[])
+void print_statistics(unsigned char array[], int n)
 {
 
-// write code to print array statistics
+  // write code to print array statistics
+  sort_array(array, n);
+  print_array(array, n);
+  printf("Meadian Value = %d\n", find_median(array, n));
+  printf("Mean value  = %.3f\n", find_mean(array, n));
+  printf("Maximum value  = %d\n", find_maximum(array, n));
+  printf("Minimum value  = %d\n", find_minimum(array, n));
+
 
 }
 
-void print_array (char array[])
+
+void print_array (unsigned char array[], int n)
 {
 
-// write code to print array
+	// write code to print array
+	printf("Sorted Array\n");
+	for(int i = 0; i < n; i++)
+		printf("%d, ",array[i]);
 
 }
 
 
-char find_median (char array[])
+unsigned char find_median (unsigned char array[], int n)
 {
-
+unsigned int i = 0;
+unsigned char median;
 // write code to calculate medain of array
-return ('\0');
+	//sort_array(array, n);
+	median = (n + 1) / 2;
+	//printf("\nmedian Number  = %d\n", median);
+return array[median];
 
 }
 
-char find_mean (char array[])
+float find_mean (unsigned char array[], int n)
 {
 
 // write code to calculate mean of array
-return ('\0');
+unsigned int i = 0;
+unsigned int sum = 0;
+float mean = 0.0;
+
+	for(i = 0; i < n; i++)
+	{
+		sum += array[i];
+	}
+//	printf("sum = %d\n", sum);
+	mean = ((float)sum / (float)n);
+
+return (mean);
 
 }
 
-char find_maximum (char array[])
+unsigned char find_maximum (unsigned char array[], int n)
 {
 
 // write code to calculate maximum of array
-return ('\0');
+unsigned int i = 0;
+unsigned char max;
+	max = array[0];
+	for(i = 1; i < n; i++)
+	{
+		if (array[i] > max)
+			max = array[i];
+
+	}
+
+return max;
 
 }
 
 
-char find_minimum (char array[])
+unsigned char find_minimum (unsigned char array[], int n)
 {
 
 // write code to calculate minimum of array
-return ('\0');
+unsigned int i = 0;
+unsigned char min;
+	min = array[0];
+	for(i = 1; i < n; i++)
+	{
+		if (array[i] < min)
+			min = array[i];
+
+	}
+
+return min;
 
 }
 
 
-void sort_array (char array[])
+void sort_array (unsigned char array[], int n)
 {
+	unsigned int i = 0, j = 0;
+	unsigned char temp;
+	//printf("Original Array\n");
+	//for(i = 0; i < n; i++)
+	//	printf("%d, ",array[i]);
 
-// write code to sort the array
-
+	// write code to sort the array
+	for (i = 0; i < n; i++)
+	{
+		for (j = i + 1; j < n; j++)
+		{
+			if(array[j] > array[i])
+			{
+				temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
+			}
+		}
+	}
 
 }
 

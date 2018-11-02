@@ -32,7 +32,7 @@
  *
  * @return None
  */
-void print_statistics(char array[]);
+void print_statistics(unsigned char array[], int);
 
 
 /**
@@ -44,7 +44,7 @@ void print_statistics(char array[]);
  *
  * @return None
  */
-void print_array (char array[]);
+void print_array (unsigned char array[], int n);
 
 
 /**
@@ -56,7 +56,7 @@ void print_array (char array[]);
  *
  * @return Median value
  */
-char find_median (char array[]);
+unsigned char find_median (unsigned char array[], int);
 
 
 /**
@@ -68,7 +68,7 @@ char find_median (char array[]);
  *
  * @return mean value
  */
-char find_mean (char array[]);
+float find_mean (unsigned char array[], int);
 
 
 /**
@@ -80,7 +80,7 @@ char find_mean (char array[]);
  *
  * @return maximum value
  */
-char find_maximum (char array[]);
+unsigned char find_maximum (unsigned char array[], int);
 
 
 /**
@@ -92,7 +92,7 @@ char find_maximum (char array[]);
  *
  * @return minimum value
  */
-char find_minimum (char array[]);
+unsigned char find_minimum (unsigned char array[], int );
 
 
 /**
@@ -104,7 +104,7 @@ char find_minimum (char array[]);
  *
  * @return minimum value
  */
-void sort_array (char array[]);
+void sort_array (unsigned char array[], int);
 
 
 
